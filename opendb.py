@@ -5,20 +5,19 @@ def openIntro():
     print("+------------------------+")
     print(" No | Subjects")
     print("+------------------------+")
-    file = open("Database-File/list_subject.txt", "r")
-    i = 1
-    for line in file:
-        j = f"{i}".ljust(3)
-        print(f" {j}| {line.strip()}")
-        i += 1
-    file.close()
+    with open("Database-File/list_subject.txt", "r") as file:
+        i = 1
+        for line in file:
+            j = f"{i}".ljust(3)
+            print(f" {j}| {line.strip()}")
+            i += 1
     listSub = []
     with open("Database-File/list_subject.txt", "r") as file:
         listSub = [line.strip() for line in file]
     sub = int(input("\nChoose Sub : "))
     clearCMD()
     banner()
-    print(listSub[sub - 1])
+    print("|", listSub[sub - 1], "|")
 
 
 def openOption():
