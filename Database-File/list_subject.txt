@@ -9,4 +9,7 @@ Mantap
 Keren
 Oke
 Siap
-Cuy
+CuyMantap
+Text
+Testing
+Siapa
