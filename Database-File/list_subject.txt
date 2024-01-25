@@ -1,21 +1,2 @@
 Kalkulus
-Matematika Diskrit
-Matematika Terapan
-Programming
-Fisika Matriks
-Agama
-Mantap
-Mantap
-Keren
-Oke
-Siap
-CuyMantap
-Text
-Testing
-Siapa
-Testx
-Testssss
-Test
-Testsas
-Testsadada
-Testings
+Algoritma Pemrograman
