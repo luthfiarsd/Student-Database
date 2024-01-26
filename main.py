@@ -11,12 +11,12 @@ while True:
     option = input("=> ")
     match option:
         case "1":
-            # try:
-            opdb.openIntro()
-        # except:
-        #     print("Invalid input or database not found, please create a new one ...")
-        #     time.sleep(2)
-        #     continue
+            try:
+                opdb.openIntro()
+            except:
+                print("Invalid input or database not found, please create a new one.")
+                time.sleep(2)
+                continue
         case "2":
             print()
             nameSubject = input("Input subject name or press enter to cancel:\n\n=> ")

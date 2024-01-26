@@ -1,2 +1,4 @@
 Kalkulus
 Algoritma Pemrograman
+Logika Informatika
+2
