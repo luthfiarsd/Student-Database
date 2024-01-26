@@ -1,1 +1,5 @@
-Mantap
+MHS-1,Raffi Ahmad,90,80,70,80.0
+MHS-2,Michael Jordan,80,90,60,76.66666666666667
+MHS-3,Joaquin Phoenix,65,70,80,71.66666666666667
+MHS-1,David Beckham,90,80,67,79.0
+MHS-1,Dennis Derric,90,60,90,80.0

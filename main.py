@@ -1,42 +1,18 @@
 import os
 import time
-import Tools.opendb as opdb
+import Tools.open_db as opdb
 from Tools.utility import clearCMD, banner
-
 
 while True:
     clearCMD()
     banner()
-
     print("Option:\n1. Open Subject Database\n2. Create Subject Database\n3. Exit\n")
+    
     option = input("=> ")
     match option:
         case "1":
             # try:
-            x = True
-            while x == True:
-                clearCMD()
-                banner()
-                opdb.openIntro()
-                listSub = []
-                with open("Database-File/list_subject.txt", "r") as file:
-                    listSub = [line.strip() for line in file]
-                try:
-                    sub = int(input("\n=> "))
-                except:
-                    break
-                opdb.openSub(listSub, sub)
-                print("\nOption:\n1. Add Data\n2. Edit Data\n3. Remove Data\n4. Back\n")
-                openOpt = input("=> ")
-                match openOpt:
-                    case "1":
-                        pass
-                    case "2":
-                        pass
-                    case "3":
-                        pass
-                    case 4:
-                        continue
+            opdb.openIntro()
         # except:
         #     print("Invalid input or database not found, please create a new one ...")
         #     time.sleep(2)
