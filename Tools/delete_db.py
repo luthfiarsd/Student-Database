@@ -5,7 +5,7 @@ def removeData(listSub, sub):
             lines = file.readlines()
             print(lines)
         with open(f"Database-File/{listSub[sub-1]}.txt", "w") as file:
-            whatRemove = input("Choose index to remove: ")
+            whatRemove = input("Choose index to delete data: ")
             for line in lines:
                 if line.startswith(whatRemove)==False:
                     file.write(line)

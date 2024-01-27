@@ -1,5 +1,5 @@
 from .utility import clearCMD, banner
-from . import add_db, edit_db, remove_db
+from . import add_db, delete_db, edit_db
 import time
 
 
@@ -54,7 +54,7 @@ def openSub(listSub, sub):
                 )
                 print(dataPrint)
         print(
-            "\nOption:\n1. Add Data\n2. Edit Data\n3. Remove Data\n\nPress enter to go back\n"
+            "\nOption:\n1. Add Data\n2. Edit Data\n3. Delete Data\n\nPress enter to go back\n"
         )
         openOpt = input("=> ")
         match openOpt:
@@ -63,7 +63,7 @@ def openSub(listSub, sub):
             case "2":
                 pass
             case "3":
-                remove_db.removeData(listSub, sub)
+                delete_db.removeData(listSub, sub)
             case "":
                 break
             case _:
