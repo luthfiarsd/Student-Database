@@ -1,5 +1,5 @@
 from .utility import clearCMD, banner
-from . import add_db
+from . import add_db, edit_db, remove_db
 import time
 
 
@@ -63,7 +63,7 @@ def openSub(listSub, sub):
             case "2":
                 pass
             case "3":
-                pass
+                remove_db.removeData(listSub, sub)
             case "":
                 break
             case _:
