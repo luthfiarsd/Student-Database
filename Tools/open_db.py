@@ -47,11 +47,12 @@ def openSub(listSub, sub):
             lines = file.readlines()
             listing = []
             for line in lines:
-                listing.append(line.split(","))
-            for indexing, data in enumerate(listing):
-                indexes = f"MHS-{indexing+1}"
+                data = line.split(",")
+                if len(data) == 6:
+                    listing.append(data)
+            for data in listing:
                 dataPrint = " {:<6} | {:<40} | {:<5} | {:<5} | {:<5} | {:.2f}".format(
-                    indexes, data[0], data[1], data[2], data[3], float(data[4])
+                    data[0], data[1], data[2], data[3], data[4], float(data[5])
                 )
                 print(dataPrint)
         print(
