@@ -48,9 +48,10 @@ def openSub(listSub, sub):
             listing = []
             for line in lines:
                 listing.append(line.split(","))
-            for data in listing:
+            for indexing, data in enumerate(listing):
+                indexes = f"MHS-{indexing+1}"
                 dataPrint = " {:<6} | {:<40} | {:<5} | {:<5} | {:<5} | {:.2f}".format(
-                    data[0], data[1], data[2], data[3], data[4], float(data[5])
+                    indexes, data[0], data[1], data[2], data[3], float(data[4])
                 )
                 print(dataPrint)
         print(
