@@ -7,16 +7,16 @@ while True:
     clearCMD()
     banner()
     print("Option:\n1. Open Subject Database\n2. Create Subject Database\n3. Exit\n")
-    
+
     option = input("=> ")
     match option:
         case "1":
-            # try:
+            try:
                 opdb.openIntro()
-            # except:
-            #     print("Invalid input or database not found, please create a new one.")
-            #     time.sleep(2)
-            #     continue
+            except:
+                print("Invalid input or database not found, please create a new one.")
+                time.sleep(2)
+                continue
         case "2":
             print()
             nameSubject = input("Input subject name or press enter to cancel:\n\n=> ")

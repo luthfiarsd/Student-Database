@@ -1,4 +1,3 @@
-Kalkulus
-Algoritma Pemrograman
-Logika Informatika
-2
+Calculus
+Algorithm
+Data structure
