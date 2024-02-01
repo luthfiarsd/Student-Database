@@ -63,7 +63,7 @@ def openSub(listSub, sub):
             case "1":
                 add_db.addData(listSub, sub)
             case "2":
-                pass
+                edit_db.editData(listSub, sub)
             case "3":
                 delete_db.removeData(listSub, sub)
             case "":
